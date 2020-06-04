@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+body {
+  background: #4142ba; }
+
+.container {
+  width: 560px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+  .container .signature-card {
+    width: 100%;
+    background-image: linear-gradient(90deg, #7e67ea, #cc8ef7);
+    padding: 24px 16px;
+    border-radius: 16px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    display: flex;
+    box-shadow: 0 0 17px -9px #000; }
+    .container .signature-card .logo .profile-image {
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border-bottom: 4px solid #fff;
+      background-image: linear-gradient(transparent 30%, #fff); }
+      .container .signature-card .logo .profile-image img {
+        max-width: 100%;
+        transform: translateY(10%) scale(1.1); }
+    .container .signature-card .info {
+      font-family: "roboto";
+      padding-left: 16px; }
+      .container .signature-card .info h3 {
+        color: #fff; }
+      .container .signature-card .info p:first-of-type {
+        color: #fffa;
+        font-weight: 200;
+        margin-bottom: 16px; }
+      .container .signature-card .info p {
+        font-size: 0.9rem; }
+        .container .signature-card .info p a {
+          color: #fff;
+          text-decoration: none; }
+    .container .signature-card .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .container .signature-card .social ul {
+        list-style: none;
+        text-align: right; }
+        .container .signature-card .social ul li {
+          display: inline-block;
+          margin-right: 4px; }
+          .container .signature-card .social ul li a {
+            font-size: 1.1rem;
+            color: #fff; }

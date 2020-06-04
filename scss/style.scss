@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+$grid: 12;
+
+@for $i from 1 to 12 {
+    .col-#{$i} {
+        width: 100% / (12 / $i);
+    }
+}
+body {
+    background: #4142ba;
+}
+.container {
+    width: 560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    .signature-card {
+        width: 100%;
+        background-image: linear-gradient(90deg ,#7e67ea, #cc8ef7);
+        padding: 24px 16px;
+        border-radius: 16px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        display: flex;
+        box-shadow: 0 0 17px -9px #000;
+        .logo {
+            .profile-image {
+                width: 90%;
+                margin: 0 auto;
+                border-radius: 50%;
+                overflow: hidden;
+                border-bottom: 4px solid #fff;
+                background-image: linear-gradient(transparent 30%, #fff);
+                img {
+                    max-width: 100%;
+                    transform: translateY(10%) scale(1.1);
+                }
+            }
+        }
+        .info {
+            font-family: "roboto";
+            padding-left: 16px;
+            h3 {
+                color: #fff;
+            }
+            p:first-of-type {
+                color: #fffa;
+                font-weight: 200;
+                margin-bottom: 16px;
+            }
+            p {
+                font-size: 0.9rem;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+        .social {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            ul {
+                list-style: none;
+                text-align: right;
+                li {
+                    display: inline-block;
+                    margin-right: 4px;
+                    a {
+                        font-size: 1.1rem;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
